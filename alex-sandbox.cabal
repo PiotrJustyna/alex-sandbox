@@ -1,0 +1,58 @@
+cabal-version:      3.8
+-- The cabal-version field refers to the version of the .cabal specification,
+-- and can be different from the cabal-install (the tool) version and the
+-- Cabal (the library) version you are using. As such, the Cabal (the library)
+-- version used must be equal or greater than the version stated in this field.
+-- Starting from the specification version 2.2, the cabal-version field must be
+-- the first thing in the cabal file.
+
+name:               alex-sandbox
+
+-- The package version.
+-- See the Haskell package versioning policy (PVP) for standards
+-- guiding when and how versions should be incremented.
+-- https://pvp.haskell.org
+-- PVP summary:     +-+------- breaking API changes
+--                  | | +----- non-breaking API additions
+--                  | | | +--- code changes with no API change
+version:            1.0.0.0
+
+synopsis:           sandbox for alex - a lexical analyser generator
+
+description:        Here you will find a complete environment to let you experiment with alex-generated lexers.
+
+homepage:           https://github.com/PiotrJustyna/alex-sandbox
+
+license:            MIT
+
+license-file:       LICENSE
+
+author:             Piotr Justyna
+
+maintainer:         piotr.justyna@gmail.com
+
+category:           Development
+
+build-type:         Simple
+
+extra-doc-files:    readme.md
+
+-- Extra source files to be distributed with the package, such as examples, or a tutorial module.
+-- extra-source-files:
+
+common warnings
+    ghc-options:        -Wall
+
+executable alex-sandbox
+    import:             warnings
+
+    main-is:            Main.hs
+
+    other-modules:      Lexer
+
+    default-extensions: LambdaCase
+
+    build-depends:      base ^>= 4.19.1.0,
+                        array
+
+    default-language:   Haskell2010
