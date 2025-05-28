@@ -4,17 +4,19 @@ Sandbox for alex - a lexical analysis generator. Batteries included:
 
 * a dockerized development environment
 * build/run scripts
-* starting example
+* examples:
+  * lexers
+  * haskell files interfacing generated lexers
+  * input text file
 
 ## to use
 
 * start development environment or work with your local haskell/cabal installation
 * `./build.sh`:
-  * generates lexer using alex
-  * builds the haskell code
-  * lints it
+  * generates lexers using alex
+  * builds and lints the haskell code
 * `./run.sh` - executes the compiled code
-* output: `["word: Hello","punctuation: ,","word: World","punctuation: !"]`
+* output (depending on chosen example, but showing example 1 in this case): `["word: Hello","punctuation: ,","word: World","punctuation: !"]`
 
 Now that you have a basic development loop established, you can start building more sophisticated lexers with alex and execute them with your input.
 

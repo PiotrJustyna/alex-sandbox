@@ -1,6 +1,9 @@
 module Main where
 
-import Lexer (alexScanTokens)
+import Example1 (scan)
+import Example2 (scan)
 
 main :: IO ()
-main = print $ alexScanTokens "Hello, World!"
+main = do
+  -- Example1.scan
+  Example2.scan

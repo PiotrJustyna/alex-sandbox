@@ -48,7 +48,10 @@ executable alex-sandbox
 
     main-is:            Main.hs
 
-    other-modules:      Lexer
+    other-modules:      Lexer1
+                        Lexer2
+                        Example1
+                        Example2
 
     default-extensions: LambdaCase
 

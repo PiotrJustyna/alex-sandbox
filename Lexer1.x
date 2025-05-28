@@ -1,5 +1,5 @@
 {
-module Lexer (alexScanTokens) where
+module Lexer1 (alexScanTokens) where
 }
 
 %wrapper "basic"
