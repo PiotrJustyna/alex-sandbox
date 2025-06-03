@@ -5,5 +5,5 @@ import System.IO
 
 scan :: IO ()
 scan = do
-  fileContent <- readFile "input2.txt"
+  fileContent <- readFile "./Lexers/Lexer2/input.txt"
   print $ alexScanTokens fileContent

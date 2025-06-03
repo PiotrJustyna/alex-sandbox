@@ -5,9 +5,8 @@ Sandbox for alex - a lexical analysis generator. Batteries included:
 * a dockerized development environment
 * build/run scripts
 * examples:
-  * lexers
-  * haskell files interfacing the generated lexers
-  * input text file
+  * [Lexer1](./Lexer1)
+  * [Lexer2](./Lexer2)
 
 ## to use
 
