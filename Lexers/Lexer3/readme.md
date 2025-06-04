@@ -1,3 +1,3 @@
 # readme
 
-Simplified drakon silhouette diagram lexer.
+Each token is a diagram block.

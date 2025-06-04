@@ -59,6 +59,8 @@ executable alex-sandbox
                         array
 
     hs-source-dirs:     .
-                        Lexers
+                        Lexers/Lexer1
+                        Lexers/Lexer2
+                        Lexers/Lexer3
 
     default-language:   Haskell2010
