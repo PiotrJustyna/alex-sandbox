@@ -1,5 +1,7 @@
 {
 module Lexer3 (alexScanTokens) where
+
+import Data.Strings
 }
 
 %wrapper "basic"
@@ -26,7 +28,7 @@ data Block =
 extractBlock :: String -> Block
 extractBlock x =
   let id = extractId x
-      content = drop (length id) x
+      content = strTrim . strReplace "\"" "" $ drop (length id) x
   in Block id content
 
 extractId :: String -> String
