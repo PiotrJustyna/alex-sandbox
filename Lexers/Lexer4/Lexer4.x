@@ -23,6 +23,7 @@ tokens :-
   R                           { \s -> "right branch identifier" }
   \{                          { \s -> "opening curly bracket" }
   \}                          { \s -> "closing curly bracket" }
+  @id                         { \s -> "solo identifier: " <> s }
 
 {
 data Block =
