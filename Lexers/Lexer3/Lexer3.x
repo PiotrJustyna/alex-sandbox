@@ -10,15 +10,19 @@ $digit        = 0-9
 $alpha        = [a-zA-Z]
 
 $idChar       = [$alpha $digit \']
-$contentChar  = [$alpha $digit $white \' \, \!]
+$contentChar  = [$alpha $digit $white \' \, \! \-]
 
 @id           = $idChar+
 @content      = $contentChar+
 
 tokens :-
 
-  $white+ ;
-  @id [$white]+ \"@content\" { \s -> extractBlock s }
+  $white+                     ;
+  @id [$white]+ \"@content\"  { \s -> "block: " <> s }
+  L                           { \s -> "left branch identifier" }
+  R                           { \s -> "right branch identifier" }
+  \{                          { \s -> "opening curly bracket" }
+  \}                          { \s -> "closing curly bracket" }
 
 {
 data Block =
