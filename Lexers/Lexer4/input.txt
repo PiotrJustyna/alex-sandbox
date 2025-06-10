@@ -1,0 +1,21 @@
+1  "start"
+2  "Hello, World!"
+3  "fork"
+  L {
+    3l1 "left branch - action 1"
+    3l2 "left branch - action 2"
+    3l3 "left branch - fork 1"
+  }
+    L {
+      3l3l1 "left branch - action 1"
+      3l3l2 "left branch - action 2"
+    }
+    R {
+      3l3r1 "right branch - action 1"
+      3l3r2 "right branch - action 2"
+    }
+  R {
+    3r1 "right branch - action 1"
+    3r1 "right branch - action 1"
+  }
+4  "end"
