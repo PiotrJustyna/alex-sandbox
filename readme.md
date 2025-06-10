@@ -8,6 +8,7 @@ Sandbox for alex - a lexical analysis generator. Batteries included:
   * [Lexer1](./Lexer1)
   * [Lexer2](./Lexer2)
   * [Lexer3](./Lexer3)
+  * [Lexer4](./Lexer4)
 
 ## to use
 
