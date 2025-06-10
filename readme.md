@@ -5,10 +5,10 @@ Sandbox for alex - a lexical analysis generator. Batteries included:
 * a dockerized development environment
 * build/run scripts
 * examples:
-  * [Lexer1](./Lexer1)
-  * [Lexer2](./Lexer2)
-  * [Lexer3](./Lexer3)
-  * [Lexer4](./Lexer4)
+  * [Lexer1](./Lexers/Lexer1)
+  * [Lexer2](./Lexers/Lexer2)
+  * [Lexer3](./Lexers/Lexer3)
+  * [Lexer4](./Lexers/Lexer4)
 
 ## to use
 
